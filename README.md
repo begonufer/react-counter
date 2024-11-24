@@ -1,6 +1,6 @@
 ## React Counter App with Material-UI
 
-## Description.
+## Description
 
 This project is a counter app built with **React**, **Material-UI** and **FontAwesome**.
 
@@ -8,7 +8,7 @@ It allows the user to perform the following actions:
 
 - **Increment** the counter.
 - **Decrement** the counter.
-- Reset** the counter to 0.
+- **Reset** the counter to 0.
 - Ensures that the counter does not go below 0 or exceed the maximum value of **10**.
 - Displays an **alert** when the maximum counter limit is reached.
 
