@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+## React Counter App with Material-UI
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description.
 
-## Available Scripts
+This project is a counter app built with **React**, **Material-UI** and **FontAwesome**.
 
-In the project directory, you can run:
+It allows the user to perform the following actions:
 
-### `npm start`
+- **Increment** the counter.
+- **Decrement** the counter.
+- Reset** the counter to 0.
+- Ensures that the counter does not go below 0 or exceed the maximum value of **10**.
+- Displays an **alert** when the maximum counter limit is reached.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The interface is designed with a **dark theme**, large buttons, and a centered layout using **Material-UI** for style and structure. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Technologies used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [**React**](https://reactjs.org/) - Library for building user interfaces.
+- [**Material-UI**](https://mui.com/) - Component framework for React.
+- [**FontAwesome**](https://fontawesome.com/) - Library of icons used in the application buttons.
+- [**Google Fonts**](https://fonts.google.com/) - Custom typography **Big Shoulders Stencil Display**.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project configuration
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Before you start, make sure you have the following programs installed on your system:
 
-### `npm run eject`
+- [**Node.js**](https://nodejs.org/) (v16 or higher recommended).
+- [**npm**](https://www.npmjs.com/) or [**yarn**](https://yarnpkg.com/)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/begonufer/react-counter.git
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the project directory:
+   ```bash
+   cd react-counter
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+   Or if you prefer Yarn:
+   ```bash
+   yarn install
+   ```
 
-## Learn More
+4. Run the project in development mode:
+   ```bash
+   npm start
+   ```
+   Or with Yarn:
+   ```bash
+   yarn start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Open your browser and go to http://localhost:3000 to view the application.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## Project structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+react-counter-app/
+├── public/ # # Static files.
+│ ├─── index.html # Main HTML file.
+│ └── ...
+├─── src/ # Source code.
+│ ├─── App.js # Main component of the application.
+│ ├─── index.js # React entry point.
+│ ├─── theme.js # Material-UI theme configuration file.
+│ └── ...
+├─── package.json # Project configuration and dependencies.
+├────────── README.md # Project documentation.
+└── ...
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Improvement points
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Alert on reaching minimum**: Add a similar alert when the minimum limit is reached.
+- **Custom limit setting**: Allow the user to set the maximum and minimum limit of the counter.
+- **Interval counter**: Allow the user to configure the intervals at which the counter is added or subtracted.
+- **Unit testing**: Implement unit tests to verify the behavior of the counter.
+- **Integrating animations**: Use the **Material-UI Transitions** library to animate changes in the counter.
+- **Add graphs**: Add a graphical representation of the counter value with respect to the minimum and maximum value.
